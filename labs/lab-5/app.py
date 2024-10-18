@@ -7,7 +7,15 @@ from db.server import app
 @app.route('/')
 def index():
     return render_template("index.html")
-
+@app.route('/cat1')
+def index():
+    return render_template("index.html")
+@app.route('/cat2')
+def index():
+    return render_template("index.html")
+@app.route('/cat3')
+def index():
+    return render_template("index.html")
 if __name__ == "__main__":
     # debug refreshes your application with your new changes every time you save
     app.run(debug=True)
